@@ -103,3 +103,63 @@ footer {
   .nav-links { gap: 1rem; flex-wrap: wrap; }
   .hero h2 { font-size: 1.8rem; }
 }
+
+/* ---------- Skill cards ---------- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+}
+
+.skill-card.expanded { border-color: var(--teal); }
+
+.tag {
+  display: inline-block;
+  background: #e1f1ed;
+  color: var(--teal);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card h3 { color: var(--navy); margin-bottom: 0.4rem; }
+.skill-card .price { font-weight: 700; color: var(--teal); margin-top: 0.6rem; }
+.skill-card .provider { font-size: 0.9rem; color: #555; }
+
+.card-details {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px dashed #ccd5e0;
+  font-size: 0.9rem;
+}
+
+.card-toggle {
+  margin-top: 0.9rem;
+  background: var(--navy);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.card-toggle:hover { background: var(--teal); }

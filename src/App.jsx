@@ -1,6 +1,7 @@
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import SkillsSection from "./components/SkillsSection.jsx";
+import CostCalculator from "./components/CostCalculator.jsx";
 import Footer from "./components/Footer.jsx";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <main>
         <Hero />
         <SkillsSection />
+        <CostCalculator />
       </main>
       <Footer />
     </>

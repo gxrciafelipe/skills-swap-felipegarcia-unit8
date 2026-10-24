@@ -250,3 +250,5 @@ footer {
 
 .tool-error { margin-top: 1rem; color: #b3261e; font-weight: 600; }
 
+/* ---------- Match results ---------- */
+.match-results { margin-top: 1.5rem; }

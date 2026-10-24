@@ -163,3 +163,31 @@ footer {
 }
 
 .card-toggle:hover { background: var(--teal); }
+
+/* ---------- Category filter ---------- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-button {
+  background: white;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+  border-radius: 999px;
+  padding: 0.4rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.filter-button:hover { background: #e8eef7; }
+
+.filter-button.active {
+  background: var(--navy);
+  color: white;
+}
+

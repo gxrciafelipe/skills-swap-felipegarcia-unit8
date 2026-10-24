@@ -1,5 +1,9 @@
 import { useState } from "react";
 
+function formatPrice(price) {
+  return price === 0 ? "Free" : `$${price} / hour`;
+}
+
 function SkillCard({ skill }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -8,7 +12,7 @@ function SkillCard({ skill }) {
       <span className="tag">{skill.category}</span>
       <h3>{skill.title}</h3>
       <p>{skill.description}</p>
-      <p className="price">{skill.price}</p>
+      <p className="price">{formatPrice(skill.price)}</p>
       <p className="provider">Provider: {skill.provider}</p>
 
       {expanded && (
